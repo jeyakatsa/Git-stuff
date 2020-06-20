@@ -1,0 +1,250 @@
+
+Jeyak@DESKTOP-JID5NJA MINGW64 /
+$ cd ~/OneDrive/Desktop
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop
+$ mkdir test
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop
+$ cd test
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test
+$ >index.html
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test
+$ >styles.css
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test
+$ git init
+Initialized empty Git repository in C:/Users/Jeyak/OneDrive/Desktop/test/.git/
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ code .
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add .
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ dir
+index.html  styles.css
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "wrote some code"
+[master (root-commit) 741c282] wrote some code
+ 2 files changed, 6 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "update html"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "update html"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   styles.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add <index.html>
+bash: syntax error near unexpected token `newline'
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add <index.html>...
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add index.html
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+Revert "update css"
+
+ehis reverts commit 8f87fe8638cdf2a4251a44c30fd8e6b839f36c4b.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#       modified:   index.html
+#       modified:   styles.css
+#
+# Untracked files:
+#       ...
+#
+~
+~
+~
+~
+~
+~
+~
+
+-----------------------------------------------------------
+Had to close and restart GitBash Client
+
+
+Jeyak@DESKTOP-JID5NJA MINGW64 /
+$ ~OneDrive/Desktop/test
+bash: ~OneDrive/Desktop/test: No such file or directory
+
+Jeyak@DESKTOP-JID5NJA MINGW64 /
+$ cd ~/OneDrive/Desktop/test
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git log
+commit 8f87fe8638cdf2a4251a44c30fd8e6b839f36c4b (HEAD -> master)
+Author: Jeremy Akatsa <jeyakatsa@gmail.com>
+Date:   Sat Jun 20 15:01:51 2020 -0700
+
+    update css
+
+commit 741c28284d1a23b3ef55ff56c4ce45b1ed933cbd
+Author: Jeremy Akatsa <jeyakatsa@gmail.com>
+Date:   Sat Jun 20 14:56:40 2020 -0700
+
+    wrote some code
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git revert 741c2828
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git log
+commit 8f87fe8638cdf2a4251a44c30fd8e6b839f36c4b (HEAD -> master)
+Author: Jeremy Akatsa <jeyakatsa@gmail.com>
+Date:   Sat Jun 20 15:01:51 2020 -0700
+
+    update css
+
+commit 741c28284d1a23b3ef55ff56c4ce45b1ed933cbd
+Author: Jeremy Akatsa <jeyakatsa@gmail.com>
+Date:   Sat Jun 20 14:56:40 2020 -0700
+
+    wrote some code
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git revert 741c2828
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add .
+error: open("..."): No such file or directory
+error: unable to index file '...'
+fatal: adding files failed
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ dir
+index.html  styles.css
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "testing reverting commit"
+[master 883688f] testing reverting commit
+ 2 files changed, 2 deletions(-)
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git log
+commit 883688f9fc720715c0b390bb644be3b0f2ef0e37 (HEAD -> master)
+Author: Jeremy Akatsa <jeyakatsa@gmail.com>
+Date:   Sat Jun 20 15:19:55 2020 -0700
+
+    testing reverting commit
+
+commit 8f87fe8638cdf2a4251a44c30fd8e6b839f36c4b
+Author: Jeremy Akatsa <jeyakatsa@gmail.com>
+Date:   Sat Jun 20 15:01:51 2020 -0700
+
+    update css
+
+commit 741c28284d1a23b3ef55ff56c4ce45b1ed933cbd
+Author: Jeremy Akatsa <jeyakatsa@gmail.com>
+Date:   Sat Jun 20 14:56:40 2020 -0700
+
+    wrote some code
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git revert 8f87fe8638
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ...
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add .
+error: open("..."): No such file or directory
+error: unable to index file '...'
+fatal: adding files failed
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git add index.html styles.css
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ dir
+index.html  styles.css
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git commit -m "final commit"
+[master 90922b6] final commit
+ 2 files changed, 2 insertions(+)
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/test (master)
+$ git log
+commit 90922b668b2f3bb3c040e7714927a517e3bb466d (HEAD -> master)
+Author: Jeremy Akatsa <jeyakatsa@gmail.com>
+Date:   Sat Jun 20 15:24:02 2020 -0700
+
+    final commit
+
+commit 883688f9fc720715c0b390bb644be3b0f2ef0e37
+Author: Jeremy Akatsa <jeyakatsa@gmail.com>
+Date:   Sat Jun 20 15:19:55 2020 -0700
+
+    testing reverting commit
+
+commit 8f87fe8638cdf2a4251a44c30fd8e6b839f36c4b
+Author: Jeremy Akatsa <jeyakatsa@gmail.com>
+Date:   Sat Jun 20 15:01:51 2020 -0700
+
+    update css
+
+commit 741c28284d1a23b3ef55ff56c4ce45b1ed933cbd
+Author: Jeremy Akatsa <jeyakatsa@gmail.com>
+Date:   Sat Jun 20 14:56:40 2020 -0700
+
+    wrote some code
+:
+
