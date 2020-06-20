@@ -1,0 +1,84 @@
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git
+$ mkdir test
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git
+$ cd test
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/test
+$ >index.html
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/test
+$ >styles.css
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/test
+$ >commands.txt
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/test
+$ cp index.html index_2.html
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/test
+$ dir
+commands.txt  index.html  index_2.html  styles.css
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/test
+$ cd -
+/c/Users/Jeyak/OneDrive/Desktop/Coding Dojo/Git
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git
+$ mkdir destination
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git
+$ dir
+destination  test
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git
+$ mv test/index_2.html destination
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git
+$ cd test
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/test
+$ dir
+commands.txt  index.html  styles.css
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/test
+$ rm styles.css
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/test
+$ dir
+commands.txt  index.html
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/test
+$ dc -
+bash: dc: command not found
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/test
+$ cd -
+/c/Users/Jeyak/OneDrive/Desktop/Coding Dojo/Git
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git
+$ cd destination
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/destination
+$ dir
+index_2.html
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git/destination
+$ cd -
+/c/Users/Jeyak/OneDrive/Desktop/Coding Dojo/Git
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git
+$ rm destination
+rm: cannot remove 'destination': Is a directory
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git
+$ rm-r destination
+bash: rm-r: command not found
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git
+$ rm -r destination
+
+Jeyak@DESKTOP-JID5NJA MINGW64 ~/OneDrive/Desktop/Coding Dojo/Git
+$ dir
+test
